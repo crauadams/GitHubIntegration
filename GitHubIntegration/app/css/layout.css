@@ -1,0 +1,94 @@
+﻿.header {
+    background-color: #CCC;
+    height: 50px;
+}
+
+    .header h2 {
+        position: relative;
+        font-family: Arial;
+        font-size: 1.5em;
+        margin-left: 5%;
+        top: 25%;
+    }
+
+.search {
+}
+
+    .search h2 {
+        float: left;
+        margin-left: 1%;
+    }
+
+    .search input {
+        margin-top: 1.8%;
+        width: 40%;
+    }
+
+.mainicon {
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+div.container {
+    width: 100%;
+}
+
+header, footer {
+    padding: 1em;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+        nav ul a {
+            text-decoration: none;
+        }
+
+article {
+    margin-left: 170px;
+    padding: 1em;
+    overflow: hidden;
+}
+
+.results {
+    margin-bottom: 1%;
+}
+
+.float_right {
+    float: right;
+    margin-right: 10%;
+}
+
+.inline {
+    display:inline;
+}
+
+.block {
+    display: block;
+}
+
+.detail {
+    margin-bottom: 2%;
+}
+.info {
+    width:100%;
+}
+
+.avatar{
+    width:40px;
+    height:40px;
+}

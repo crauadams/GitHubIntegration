@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        window.location = "/#/search";
+    </script>
+    <title>GitHubIntegration</title>
+    @Styles.Render("~/app/css")
+    @Scripts.Render("~/bundles/angular")
+
+</head>
+<body>
+    <div class="container">
+        <img src="~/app/img/git_hubicon.png" class="mainicon" />
+        <h1>Leandro de Souza Oliveira</h1>
+    </div>
+    @RenderBody()
+    <br />
+    <footer></footer>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,13 @@
+﻿<header>
+    <div class="detail">
+        <span>This repository </span> <input type="text" ng-keydown="$event.which === 13 && goToSearch()" />
+    </div>
+    <div class="info">
+        <img src="{{project.owner.avatar_url}}" class="avatar"/>
+        <a href="#">{{project.full_name}}</a>
+        <span>Watch: {{project.watchers}}</span>
+        <span>Star: {{project.subscribers_count}}</span>
+        <span>Fork: {{project.forks}}</span>
+    </div>
+
+</header>

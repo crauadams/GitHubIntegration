@@ -1,0 +1,31 @@
+﻿<header>
+    <div class="search">
+        <h2>Search</h2>
+        <input type="text" class="txtSearch" ng-model="criteria" ng-required="true" />
+        <button ng-click="loadRepositories(criteria, sortOption)" ng-disabled="!criteria">Search</button>
+    </div>
+</header>
+
+<article>
+    <span>We've found {{results.total_count}} repository results</span>
+    <div class="sort" style="float:right;margin-right:20%;">
+        <span>Sort:</span>
+        <select ng-model="sortOption" ng-options="op.description for op in sortOptions"></select>
+    </div>
+
+    <hr />
+    <div class="results" ng-repeat="result in results.items">
+        <a href="#/detail" ng-click="selectProject(result)">{{result.full_name}}</a>
+        <div>
+            <span class="block">{{result.description}}</span>
+            <span class="block">Updated on {{result.updated_at | date:'dd MMM yyyy'}}</span>
+        </div>
+        <div class="float_right inline">
+            <span>{{result.language}}</span>
+            <span><img src="../app/img/star.png" width="15" height="15" />{{result.stargazers_count}}</span>
+            <span><img src="../app/img/forks.png" width="15" height="15" />{{result.forks_count}}</span>
+        </div>
+        <br />
+        <hr />
+    </div>
+</article>
